@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#numberlist li{
+		list-style-type: none;
+		float : left;
+		margin : 0 20px;
+		font-size: 15pt;
+	}
+	/* 가상식별자 */
+	li:first-child{
+		color:orange;
+	}
+	li:last-child{
+		color : blue;
+	}
+	li:nth-child(2n){
+		color: pink;
+	}
+	
+	/* li:nth-of-type(2n){
+		color: orange;  나중에 다시볼것
+	} */ 
+	div {
+		height : 1000px;
+	}
+	
+	a:link {
+		color :black;
+		text-decoration: none;
+	}
+	
+	a:visited{
+		color: black;
+	}
+	
+	a:hover{
+		color :gray;
+	}
+
+	a:active{
+		color:pink;
+	}
+	div p:only-child {
+		color: orange;  /* 자식이 하나일때 적용 */
+}
+	
+</style>
+</head>
+<body>
+
+	<a href="http://www.naver.com">네이버</a>
+	<a href="http://www.daum.net">다음</a>
+	<a href="#numberlist">숫자리스트</a>
+
+	<p> hello</p>
+	<h2> nihao</h2>
+	
+	<ul id="numberlist">
+		<li>ONE</li>	
+		<li>TWO</li>	
+		<li>THREE</li>	
+		<li>FOUR</li>	
+		<li>FIVE</li>	
+		<li>SIX</li>	
+		<li>SEVEN</li>	
+		<li>EIGHT</li>	
+		<li>NINE</li>	
+		<li>TEN</li>	
+	
+	</ul>
+	<div></div>
+</body>
+</html>

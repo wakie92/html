@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	figure{
+		border: 1px solid red;
+		margin : 20px;
+		width: 300px;
+		height: 400;
+		float : left;
+		
+	}
+
+	img{
+		width : 300px;
+		height: 400px;
+	}
+	#img01:hover{
+		transform: translate(10px,10px);
+		-webkit-transform: translate(10px,10px);
+		-moz-transform: translate(10px,10px);
+	}
+	#img02:hover{
+		transform: translate(20px);
+		-webkit-transform: translate(20px);
+		-moz-transform: translate(20px);
+	}
+	#img03:hover{
+		transform: translate(-10px);
+		-webkit-transform: translate(-10px);
+		-moz-transform: translate(-10px);
+	}
+	#img04:hover{
+		transform: translate3d(-10px,-10px,-100px);
+		-webkit-transform: translate3d(-10px,-10px,-100px);
+		-moz-transform: translate3d(-10px,-10px,-100px);
+		
+	}
+	#img05:hover{
+		transform: scale(1.2,1.2);/* 확대 축소 */
+		-webkit-transform: scale(1.2,1.2);/* 확대 축소 */
+		-moz-transform: scale(1.2,1.2);/* 확대 축소 */
+	}
+	#img06:hover{
+		transform: scale3d(2,2,2);/* 확대 축소 */
+		-webkit-transform: scale3d(2,2,2);/* 확대 축소 */
+		-moz-transform: scale3d(2,2,2);/* 확대 축소 */
+	}
+	#img07:hover{
+		transform: rotatex (45deg);/* 확대 축소 */
+		-webkit-transform: rotatex(45deg);/* 확대 축소 */
+		-moz-transform: rotatex(45deg);/* 확대 축소 */
+	}
+	#img08:hover{
+		transform: rotatey (45deg);/* 확대 축소 */
+		-webkit-transform: rotatey(45deg);/* 확대 축소 */
+		-moz-transform: rotatey(45deg);/* 확대 축소 */
+	}
+	#img09:hover{
+		transform: rotatez (45deg);/* 확대 축소 */
+		-webkit-transform: rotatez(10deg);/* 확대 축소 */
+		-moz-transform: rotatez(45deg);/* 확대 축소 */
+		
+	}
+	#img10:hover{
+		transform: skew (45deg,15deg);/* 확대 축소 */
+		-webkit-transform: skew(45deg,15deg);/* 확대 축소 */
+		-moz-transform: skew(45deg,15deg);/* 확대 축소 */
+		
+	}
+	#img11:hover{
+		transform: skewx(45deg);/* 확대 축소 */
+		-webkit-transform: skewx(45deg);/* 확대 축소 */
+		-moz-transform: skewx(45deg);/* 확대 축소 */
+		
+	}
+</style>
+</head>
+<body>
+
+	<figure>
+		<img src="imges/dog.jpg" id ="img01">
+		<figcaption>translate(10,10) 예제</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="imges/dog.jpg" id ="img02">
+		<figcaption>translate(20,0) 예제</figcaption>
+	</figure>
+	<figure>
+		<img src="imges/dog.jpg" id ="img03">
+		<figcaption>translate(-10px) 예제</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="imges/dog.jpg" id ="img04">
+		<figcaption>translate(-10px,-10px,-100px) 예제</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="imges/dog.jpg" id ="img05">
+		<figcaption>scale(1.2,1.2)예제</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="imges/dog.jpg" id ="img06">
+		<figcaption>scale3d(2,2,2)예제</figcaption>
+	</figure>
+	
+	<figure>
+		<img src="imges/dog.jpg" id ="img07">
+		<figcaption>rotatex(45deg)예제</figcaption>
+	</figure>
+	<figure>
+		<img src="imges/dog.jpg" id ="img08">
+		<figcaption>rotatey(45deg)예제</figcaption>
+	</figure>
+	<figure>
+		<img src="imges/dog.jpg" id ="img09">
+		<figcaption>rotatez(45deg)예제</figcaption>
+	</figure>
+	<figure>
+		<img src="imges/dog.jpg" id ="img10">
+		<figcaption>skew(45deg,-15deg)예제</figcaption>
+	</figure>
+	<figure>
+		<img src="imges/dog.jpg" id ="img11">
+		<figcaption>skew(45deg)예제</figcaption>
+	</figure>
+	
+	
+</body>
+</html>

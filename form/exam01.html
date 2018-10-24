@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<!--  <form action="프로토콜을 포함하여 저겅야하함. 사용자가 입력한 데이터를 서버에 전달할 파일명"
+		method 태그는 기본적으로 get으로 디폴트값을 가진다.>
+	-->
+	<!-- <input type =="">
+				type : text(한줄 입력)
+					   password(암호처리)
+					   checkbox(다중선택)
+					   radio(단일선택)
+					   file(첨부파일)
+					   button(사용자이벤트처리)
+					   reset(초기화)
+					   hidden(입력을 받지 않은 데이터를 서버에 전달) ex) 네이버에를 통해서 g마켓 ,스카이스캐너를 통해서 항공사
+					   submit(form에서  입력한 데이터를 서버에 전송)
+		<textarea> : 다중라인 입력
+				 -->
+	<form action = "http://www.naver.com" >
+		<label>아이디 : <input type = "text" size = "10" ></label><br>
+		<label for ="pw">패스워드 : </label>
+		<input type = "password" id ="pw"><br><br>
+		
+		
+		<fieldset>
+		<strong>희망연봉</strong><br>
+		<input type = "radio" name = "salary">2400-2600<br>
+		<input type = "radio"name = "salary">2600-2800<br>
+		<input type = "radio" name = "salary">2800-3000<br>
+		<input type = "radio"name = "salary">3000-3200<br>
+		<input type = "radio"name = "salary">3200 이상<br>
+		</fieldset>
+		<br>
+		<fieldset>
+		<legend> <b>사용언어(중복선택가능) </b></legend>
+		<input type = "checkbox" name = "lang">C<br>
+		<input type = "checkbox"name = "lang">jAVA<br>
+		<input type = "checkbox"name = "lang">HTML&CSS<br>
+		<input type = "checkbox"name = "lang">JAVASCRIPT<br>
+		<input type = "checkbox"name = "lang">JSP&SEVLET<br>
+		<input type = "checkbox"name = "lang">PHP<br>
+		</fieldset>
+		<br>
+		<fieldset>
+		<strong> 취미(중복선택가능)</strong><br>
+		<input type = "checkbox" name ="hobby">코딩<br>
+		<input type = "checkbox" name ="hobby">운동<br>
+		<input type = "checkbox" name ="hobby">설계<br>
+		<input type = "checkbox" name ="hobby">디버그<br>
+		<input type = "checkbox" name ="hobby">영화보기<br>
+		</fieldset>
+		<br>
+		자기소개: <br>
+		<textarea rows="10" cols="50"></textarea>
+		
+		<br>
+		첨부파일 : <input type = "file">
+	<input type = "submit" value = "전송"><br>
+	<input type = "reset" value ="초기화"	>
+	<input type = "button" value = "button">
+					
+	
+	</form>
+</body>
+</html>

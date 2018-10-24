@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	ol{
+		list-style-type: lower-roman;
+						/* upper-roman / lower-alpha/  */
+	}
+	
+	ul{
+/* 		list-style-type : square;
+		list-style-type : none; */
+		list-style-image: url("imges/bullet.gif");
+		/* 컨트롤 스페이스로 보고 선택 */
+		list-style-position: inside;
+	}
+	
+	/* #부모태그 자식태그{
+			float : left;
+	} */
+	
+	/* ul.menu li{
+			클래스로 정의했을 경우
+	} */
+		
+	#menu li {
+		float : left;
+		margin : 0 20px;
+	}
+	
+	div{
+		height : 200px;
+		border : 1px solid red;
+	}
+	
+	#bar{
+		clear: both;
+	}
+	
+	#div01{
+		clear:both;
+	}
+</style>
+</head>
+<body>
+
+	<ol>
+		<li>리스트 스타일 1</li>
+		<li>리스트 스타일 2</li>
+		<li>리스트 스타일 3</li>
+		<li>리스트 스타일 4</li>
+		<li>리스트 스타일 5</li>
+	
+	</ol>
+	<br><br>
+	<ul>
+		<li>리스트 스타일 1</li>
+		<li>리스트 스타일 2</li>
+		<li>리스트 스타일 3</li>
+		<li>리스트 스타일 4</li>
+		<li>리스트 스타일 5</li>
+	
+	</ul>
+	
+	<ul id="menu">
+		<li> <a href = "#div01">Menu1</a></li>	
+		<li> <a href = "#div02">Menu2</a></li>	
+		<li> <a href = "#div03">Menu3</a></li>	
+		<li> <a href = "#div04">Menu4</a></li>		
+	
+	</ul>
+<!-- 	<div id = "bar"></div> -->
+	<div id="div01"> div01</div>
+	<div id="div02">div02</div>
+	<div id="div03">div03</div>
+	<div id="div04">div04</div>
+	
+</body>
+</html>

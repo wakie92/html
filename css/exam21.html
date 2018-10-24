@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	h1:first-child {
+		color:red; /* 같은레벨에서 첫번째가 h1이면 color : red */
+}
+	h1:last-child {
+	color : green;
+}
+	h2:first-of-type {
+	color : pink; /* h1타입중에 첫번째꺼 */
+}
+
+	p::first-letter {
+		font-size: 2em;/* 상대적으로 크게 하는 것이 더 유용  */
+		text-decoration: overline;
+}
+	p::first-line{
+		line-height: 20px;
+		letter-spacing: 5px;
+		word-spacing:10px;
+		white-space: nowrap;
+	}
+	p::selection{
+		background-color: yellow;
+	}
+	/* div{
+		width:150px;
+		height: 80px;
+		border: 1px solid red;
+		white-space: pre; 
+		white-space: nowrap;
+		white-space: pre-line;
+		white-space: pre-wrap;
+		text-overflow: ellipsis; 
+	} */
+	#div01 {
+		width: 150px;
+		height: 80px;
+		border: 1px solid red;
+		white-space: pre-wrap;
+		text-overflow: ellipsis;
+	}
+	
+	#div02 {
+		width:200px;
+		height: 20px;
+		text-overflow: ellipsis;
+		border: 1px solid green;
+		overflow: hidden;
+	}
+
+	
+	}
+	
+</style>
+</head>
+<body>
+
+
+	
+	<p>
+		ABCDE  FGHI<br>
+		JKLMNOPQRSTUVWXYZ
+	
+	
+	</p>
+
+	<p>
+		abcdefghi<br>
+		jklmnopqrs<br>
+		tuvwxyz<br>
+	</p>
+	<h1>Header1</h1>
+	<h2>Header2</h2>
+	<h3>Header3</h3>
+	<h4>Header4</h4>
+	<h1>Header1</h1>
+	<h2>Header2</h2>
+	<h6>Header6</h6>
+	
+	<div>
+		<h2>sub2</h2>
+		<h1>sub1</h1>
+	</div>
+	<div id="div02">
+		안녕하세요     오늘은   월요일입니다.    날씨가 좋습니다.       안녕~~~~~~~~`
+	</div>
+	<div id="div01">
+		안녕하세요     오늘은   월요일입니다.    날씨가 좋습니다.       안녕~~~~~~~~`
+	</div>
+	
+</body>
+</html>

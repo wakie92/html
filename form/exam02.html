@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html5에서 추가된 type 속성</title>
+</head>
+<body>
+	<form action = "">
+	<!--
+	 	type = date, time, week, month, datetime-local
+	 	 -->
+	
+		이메일  : <input type = "email"><br>
+		블로그 사이트 : <input type = "url"> <br>
+		전화번호 : <input type = "tel"  size = "15" 
+		pattern = "(010|011|016|017|018|019)-\d{3,4)-\d{4}"
+		placeholder ="xxx-xxxx-xxxx"><br>
+		날짜 : <input type  ="date" value = "2018-04-26" 
+					min = "2018-01-26" max = "2018-12-31"><br>
+		
+		검색어 : <input type = "search"><br>
+		
+		수량 : <input type = "number" min = "1"  max = "10" step = "2"><br>
+		범위 : <input type = "range" min = "1"  max ="10"><br>
+		색상 : <input type = "color"> <br>
+					
+		<input list="wordlist"	>	
+					<datalist id = "wordlist">
+					<option>자바</option>
+					<option>자바스크립트</option>
+					<option>JAVA</option>
+					<option>JAVASCRIPT</option>
+					<option>JSP</option>
+					<option>HTML</option>
+					</datalist>
+					
+					<br><br>
+		<progress value = "50" max = "100"></progress>
+		<meter value="95" max = "100"  low = "10" high ="80" ></meter>
+	<!-- 	<input type ="image" src = "../imgs/submit.gif" width = "150" height ="75">	 -->
+		<button type = "submit">전송</button>
+		<button type = "reset">취소</button>
+<!-- 		<input type = "submit" value = "전송"> -->
+	</form>
+</body>
+</html>

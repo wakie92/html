@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+		#header, #section{
+			border: 1px solid black;
+		}
+		/* #header h1{
+			color : red;
+		} */
+		
+		 #header > h1{
+			color : red;/* header 바로 아래 후손들 중에 h1 */
+		}  
+		
+		 
+		#header>*{
+			color : green;  /* 전체를 하고싶으면 '*' */
+		}
+</style>
+</head>
+<body>
+
+	<div id = "header">
+		<h1> 내가 제목이다.</h1>
+		<div id = "sub_header"> 
+			<h1>내가 소제목이다.</h1>
+			<h3>내가 소제목2이다</h3>
+			
+		</div>
+		<h2>내가 제목 2이다.</h2>
+		<h1>내가 제목 3이다.</h1>
+		
+	</div>
+	<div id="section">
+		<h1>내가 본문이다.</h1>
+		<p>내가 내용이다.</p>
+	</div>
+	
+</body>
+</html>

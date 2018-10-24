@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div {
+		position: relative;
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		
+		animation-name: anidiv;
+		-webkit-animation-name: anidiv;
+		-moz-animation-name: anidiv;
+		
+		animation-duration: 3s;
+		-webkit-animation-duration: 3s;
+		-moz-animation-duration: 3s;
+		
+		animation-iteration-count: 3;
+		-webkit-animation-iteration-count: 3;
+		-moz-animation-iteration-count: 3; 
+		
+		animation-direction: alternate;
+		-webkit-animation-direction: alternate;
+		-moz-animation-direction: alternate;
+	}
+	/* 
+	@keyframes anidiv {
+		from {
+			border-radius: 0;
+			background-color: red;
+		}
+		to {
+			border-radius: 50%;
+			background-color: blue;
+		}
+	}
+	 */
+	@keyframes anidiv {
+		0% {
+			left: 500px;
+			top: 50px;
+		}
+		
+		100% {
+			top : 1000px;
+		}
+		
+		
+	}
+
+</style>
+
+
+</head>
+<body>
+	<div>
+		<img src ="imges//logo.png">
+	</div>
+</body>
+</html>
